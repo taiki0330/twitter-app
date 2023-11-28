@@ -17,7 +17,7 @@ function Widgets() {
       <div className="widgets_widgetContainer">
         {/* <h2>いまどうしてる？</h2> */}
 
-        <div className='widgets_widgetContents'>
+
           {/* ライブラリ追記 */}
           <TwitterTweetEmbed tweetId={"1723275302946939267"}/>
           <TwitterTimelineEmbed 
@@ -27,7 +27,6 @@ function Widgets() {
             url={"https://twitter.com/ikiataiki"}
             options={{text: "#React勉強中", via: "ikiataiki"}}
           />
-        </div>
       </div>
     </div>
   );
