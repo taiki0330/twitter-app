@@ -29,7 +29,7 @@ function Sidebar() {
       <SidebarOptions text="もっと見る" Icon={MoreHorizIcon} />
 
       {/* ツイートボタン */}
-      <Button variant='outlined' className='sidebar_tweet'>ツイートする</Button>
+      <Button variant='outlined' className='sidebar_tweet' fullWidth>ツイートする</Button>
     </div>
   );
 }
