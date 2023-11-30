@@ -11,6 +11,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { Button } from '@mui/material';
 import "./Sidebar.css"
+import SignOut from './SignOut';
 
 function Sidebar() {
   return (
@@ -27,6 +28,7 @@ function Sidebar() {
       <SidebarOptions text="リスト" Icon={ListAltIcon} />
       <SidebarOptions text="プロフィール" Icon={AccountCircleIcon} />
       <SidebarOptions text="もっと見る" Icon={MoreHorizIcon} />
+      <SignOut />
 
       {/* ツイートボタン */}
       <Button variant='outlined' className='sidebar_tweet' fullWidth>ツイートする</Button>

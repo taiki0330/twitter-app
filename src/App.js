@@ -1,21 +1,15 @@
-import './App.css';
-import Sidebar from './components/sidebar/Sidebar';
-import Timeline from './components/timeline/Timeline';
-import Widgets from './components/widget/Widgets';
+import Main from './components/Main';
+import SignIn from './components/SignIn';
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from './firabase';
+
 
 function App() {
+
+  const [ user ] = useAuthState(auth);
+
   return (
-    <div className="app">
-      {/* Sidebar */}
-      <Sidebar />
-
-      {/* Timeline */}
-      <Timeline />
-
-      {/* Widget */}
-      <Widgets />
-      
-    </div>
+    <div>{user ? <Main /> : <SignIn />}</div>
   );
 }
 
